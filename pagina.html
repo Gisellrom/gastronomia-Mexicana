@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gastronomia Mexicana</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+        <style>
+            body, html {height: 100%}
+            body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+            .menu {display: none}
+            .bgimg {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("https://www.travelreport.mx/wp-content/uploads/2021/09/Diseno-sin-titulo-2.png");
+            min-height: 90%;
+            }
+        </style>
+    </head>
+<body>
+
+<!-- MENU PRINCIPAL -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">INICIO</a>
+    <a href="#menu" class="w3-bar-item w3-button">PLATILLOS</a>
+    <a href="#about" class="w3-bar-item w3-button">ACERCA DE</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTACTO</a>
+  </div>
+</div>
+  
+<!-- Encabezado con imagen -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">PLATILLOS<br>MEXICANOS</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>PLATILLOS<br>MEXICANOS</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">10 PLATILLOS POPULARES</a></p>
+  </div>
+</header>
+
+<!-- Menu -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">GASTRONOMÍA MEXICANA</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Comida');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Comida</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Bebida');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Bebida</div>
+      </a>
+    </div>
+
+    <div id="Comida" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Pozole</b></h1>
+      <p class="w3-text-grey">Maíz cacahuazintle seco, carne de puerco o pollo. Condimentos: limón, sal, chile molido, lechuga, rabanos, cebolla y orégano.
+      <img src="https://editorialtelevisa.brightspotcdn.com/wp-content/uploads/2020/08/pozole.jpg" style="width:150px" class="w3-circle w3-right" alt="Pozole"></p>
+      <hr>
+   
+      <h1><b>Tacos</b></h1>
+      <p class="w3-text-grey">Tortilla (maíz), carne picada, acompañado de: cebolla, cilantro picado, limón y salsa. 
+      <img src="https://unareceta.com/wp-content/uploads/2014/05/receta-de-tacos-mexicanos.jpg" style="width:150px" class="w3-circle w3-right" alt="Taco"></p>
+      <hr>
+      
+      <h1><b>Mole</b></h1>
+      <p class="w3-text-grey">Chocaolate amargo, chile ancho, mulato, pasilla, chipotle; almendras, plátano, nueces, pasas, ajonjolí, clavo, canela, perejil, pimienta, cebolla, ajo y torillas. Se sirve con pollo. 
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0pADxaAfDMrJn46Hg2Tw30HEVOAVeo443dRkq_wDAIyfI0NL2I1aSGBQG3I-lbrmoUIA&usqp=CAU" style="width:150px" class="w3-circle w3-right" alt="Mole"></p>
+      <hr>
+
+      <h1><b>Cochinita Pibil</b><span class="w3-tag w3-red w3-round">Hot!</span></h1>
+      <p class="w3-text-grey">Carne de vendao, faisán, el pavo de monte y pecarí. Se cocina en un horno de tierra<img src="https://editorialtelevisa.brightspotcdn.com/dims4/default/a714517/2147483647/strip/true/crop/560x560+220+0/resize/1000x1000!/quality/90/?url=https%3A%2F%2Fk2-prod-editorial-televisa.s3.amazonaws.com%2Fbrightspot%2Fwp-content%2Fuploads%2F2020%2F03%2Ftacos-de-cochinita.jpg" style="width:150px" class="w3-circle w3-right" alt="Pibil"></p>
+      <hr>
+
+      <h1><b>Chiles en nogada</b> </h1>
+      <p class="w3-text-grey">Chile poblano relleno de carne de res y puerco, mezclados con: pllátano, manzana, pera, durazno y bañados con una salsa de nuez<img src="https://mujer.com.mx/cdn/recipes/chiles-en-nogada-01.jpg" style="width:150px" class="w3-circle w3-right" alt="Chiles"></p>
+      <hr>
+      <h1><b>Carnitas</b></h1>
+      <p class="w3-text-grey">Carne de cerdo partida en pedazos y fritas en un cazo  con manteca de cerdo, sal y tequesquite. <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR998pTS7gD79Dhzhe3a9_vUb87I2FGnCFSL481OqK7tg&s" style="width:150px" class="w3-circle w3-right" alt="carnitas"></p>
+      <hr>
+      <h1><b>Pescado a la talla</b></h1>
+      <p class="w3-text-grey">Pescado cocinado al carbón o las brasas.<img src="https://www.comedera.com/wp-content/uploads/2019/01/pescado-a-la-talla-receta-500x375.jpg" style="width:150px" class="w3-circle w3-right" alt="talla"></p>
+      <hr>
+      
+      <h1><b>Pescado a la Veracruzana</b> <span class="w3-tag w3-red w3-round">Hot!</span></h1>
+      <p class="w3-text-grey">Jitomates, cebolla, filetes de huachinango, chiles gueros <img src="https://editorialtelevisa.brightspotcdn.com/dims4/default/e086278/2147483647/strip/true/crop/560x560+220+0/resize/1000x1000!/format/webp/quality/90/?url=https%3A%2F%2Fk2-prod-editorial-televisa.s3.amazonaws.com%2Fbrightspot%2Fwp-content%2Fuploads%2F2019%2F07%2FPescado-a-la-veracruzana.jpg" style="width:150px" class="w3-circle w3-right" alt="veracruzana"></p>
+      <hr>
+      <h1><b>Tlayudas</b></h1>
+      <p class="w3-text-grey">Tostada, cubierta de frijoles negros, tasajo o carne seca enchilada, chorizo, quesillo, cecina y aguacate<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-pCQ21jZ0m4Jgg0r49wu7770M-ucvSBrSrDZoMU9mCA&s" style="width:150px" class="w3-circle w3-right" alt="tlayuda"></p>
+      <hr>
+      <h1><b>Barbacoa</b></h1>
+      <p class="w3-text-grey">Diversas carnes, de oveja, vacuno, cabra y eventualmente de conejo, de pollo, de pescado, de venado y hasta de iguana,<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbzTxcw6dt4o5t4V2ilRU95Z8KHbhz6amDTvgM8PDCBA&s" style="width:150px" class="w3-circle w3-right" alt="barbacoa"></p>
+    </div>
+
+    <div id="Bebida" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Tequila</b> <span class="w3-tag w3-grey w3-round">Popular</span></h1>
+      <p class="w3-text-grey"> Se obtiene de la planta Agave tequilana Weber, mejor conocido como Agave azul.<img src="https://bucketrediseno.s3.amazonaws.com/uploads/photo/image/7491/mexican-tequila-drinks.jpg" style="width:150px" class="w3-circle w3-right" alt="Tequila"></p>
+      <hr>
+   
+      <h1><b>Mezcal</b></h1>
+      <p class="w3-text-grey">Las plantas de agave se tuestan en recipientes de barro, lo que le da un sabor claramente ahumado. <img src="https://oaxacamezcal.top/wp-content/uploads/2021/12/Para-todo-mal-mezcal-para-todo-bien-tambien.jpg" style="width:150px" class="w3-circle w3-right" alt="Mezcal"></p>
+      <hr>
+      
+      <h1><b>Margarita</b></h1>
+      <p class="w3-text-grey">Está hecha de tequila, licor de naranja y jugo de limón vertido sobre hielo, en un vaso con borde de sal.<img src="https://bucketrediseno.s3.amazonaws.com/uploads/photo/image/7492/mexican-margarita-drink.jpg" style="width:150px" class="w3-circle w3-right" alt="Margarita"></p>
+      <hr>
+
+      <h1><b>Michelada</b></h1>
+      <p class="w3-text-grey">Es una mezcla única de jugo de clamato y especias, combinadas con cerveza.<img src="https://bucketrediseno.s3.amazonaws.com/uploads/photo/image/7493/michelada-mexican-drink.jpg" style="width:150px" class="w3-circle w3-right" alt="Michelada"></p>
+      <hr>
+
+      <h1><b>Rompope</b></h1>
+      <p class="w3-text-grey">Yema de huevo, leche, azúcar y ron <img src="https://topadventure.com/__export/1618083045256/sites/laverdad/img/2021/04/10/rompope_puebla_portada_1.jpeg_458425832.jpeg" style="width:150px" class="w3-circle w3-right" alt="Rompope"></p>
+      <hr>
+
+      <h1><b>Aguas frescas</b></h1>
+      <p class="w3-text-grey">Jamaica, horchata, lima, entre otras. <img src="https://kokomexico.com/wp-content/uploads/2022/05/Aguas-Frescas1.jpg" style="width:150px" class="w3-circle w3-right" alt="Aguas frescas"></p>
+    </div>
+
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Gastronomía Mexiacana</h1>
+    <p>Es el conjunto de platillos y técnicas culinarias de México que forman parte de las tradiciones y vida común de sus habitantes, enriquecida por las aportaciones de las distintas regiones del país, que deriva de la experiencia del México prehispánico con la cocina europea, entre otras. El 16 de noviembre del año 2010, la gastronomía mexicana fue reconocida como Patrimonio Cultural Inmaterial de la Humanidad por la Unesco.</p>
+    <p><img src="https://www.imagenesgratis.org/wp-content/uploads/2023/01/bandera-de-mexico-wallpaper-6.jpg" style="width:150px" class="w3-circle w3-right" alt="México"></p>
+    
+  </div>
+</div>
+
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contacto</h1>
+    <p class="w3-xxlarge"><strong>Invitación para ir a comer:</strong></p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nombre" required name="Nombre"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="¿Cuántas personas van a ir ?" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Día y hora" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Opinión" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">Enviar mensaje</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
+
+
